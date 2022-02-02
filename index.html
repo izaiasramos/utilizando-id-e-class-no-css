@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+
+      <meta name="viewport" content="width=device-width">
+        <!--tag meta viewport define um layout adaptável a um tamanho de tela especifica usando content="width=320"> no lugar do 320px vc coloca o tamanho da tela que deseja . . . ou um layout flexivel a qualquer tamanho usando content="width=device-width"> como nesse caso-->
+      <title>id e class</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+        <!--linkagem de pasta css externa,vinculando com o html,para que possa receber as modificações que vier da pasta css externa-->
+    </head>
+    <body>
+     <center>
+        <!--conteudo envolvido pela tag center será direcionada ao centro da tela,sendo assim,envolvi todo o conteúdo do body com a tag center para que todo o conteúdo da página se concentre no meio(no centro) da página-->
+       <h2 id="cabecalho">2 FORMAS DE SELECIONAR ELEMENTOS ESPECIFICOS DO HTML PARA ALTERAR NO CSS</h2>
+      <center>
+      <img  src="https://blog.eseg.edu.br/wp-content/uploads/2020/06/original-6f96ee168ab0b419a98fea4f2dfc31fc-780x450.jpg"/>
+      </center>
+ 
+      <p><b>-USANDO O ID</b> <br/>
+         O problema do método <b>css externo</b>,é que se no seu html tiver mais de 1 elementos h4 por exemplo,e no css você atribuir o css para o h4,todos os h4 serão alterados pelo css ao mesmo tempo,então se voce quiser alterar somente um h4 especificamente você tem duas formas de fazer isso.</p> 
+
+      <p>Uma das formas é utilizando um id no h4 por      exemplo,e dar um nome específico para essa id     desse h4 que você quer alterar.</p>
+
+      <p><b>ficaria assim no html:</b> < h4 id="da um nome para essa id" > cabecalho < / h4 > <br/></p>
+      <p><b>ficaria assim no css:</b> #da um nome para essa id { color:blue; } <br/>
+      no css você chama a id com um #depois o nome da id,assim você altera somente 1 h4 por vez,ou seleciona apenas oque quiser.</p>
+
+      <strong>-USANDO O CLASS</strong> <br/>
+
+      <p>A forma mais utilizada para fazer isso é usando o class,ela pode ser usada quantas vezes você quiser,mesmo com o mesmo nome.</p>
+      <P><b>ficaria assim no html:</b> < h1 class="da um       nome para essa class"> cabecalho < /h1 > <br/>
+      <p><b>ficaria assim no css:</b> .da um nome para essa    class { color:blue; }</p> 
+      
+      <p>No css você chama a class com um . (um ponto) seguido do nome que você deu para a class.</p>
+
+      <p>Se eu quiser tambem posso selecionar o id e o class para altera-los juntos ao mesmo tempo. <br/>
+      <b>ficaria assim no css:</b> #nomedaid, .nomedaclass {       color:blue; fonte-size:25px;}
+      chamo a id e a class ao mesmo tempo no css para alterar-los juntos somente separando eles por uma , (uma virgula).</p>
+       </center>
+      <script src="script.js"></script>
+    </body>
+</html>

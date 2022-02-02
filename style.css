@@ -1,0 +1,12 @@
+#cabecalho{
+          background-color:rgb(227,247,211);
+          /*define um fundo quadrado da cor que desejar sobre o texto,está apenas como exemplo de como se fazer,foi definido o background da pagina no body na mesma cor*/
+           color:rgb(50,10,130);
+}
+ body {background-color:rgb(227,247,211)
+ /*cor de fundo da página*/
+  }
+
+ img{
+     width:1000px;height:400px;
+     } /*definindo Largura e Altura da imagem*/
